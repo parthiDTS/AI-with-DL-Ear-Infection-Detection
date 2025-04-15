@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ear Disease Detection</title>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; padding: 20px;">
+
+    <h2 style="color: #333;">Ear Disease Detection</h2>
+
+    <form action="/" method="post" enctype="multipart/form-data" 
+          style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); display: inline-block;">
+        <input type="file" name="file" required 
+               style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 10px; display: block;">
+        <button type="submit" 
+                style="background-color: #28a745; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+            Upload & Predict
+        </button>
+    </form>
+
+    {% if prediction %}
+        <h3 style="color: #007bff; margin-top: 20px;">Prediction: {{ prediction }}</h3>
+        <img src="{{ image_url }}" alt="Uploaded Image" 
+             style="max-width: 300px; border-radius: 8px; margin-top: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+    {% endif %}
+
+</body>
+</html>

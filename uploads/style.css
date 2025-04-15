@@ -1,0 +1,76 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centered Container */
+.container {
+    width: 40%;
+    margin: 100px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h1 {
+    color: #333;
+}
+
+/* Upload Form */
+form {
+    margin-top: 20px;
+}
+
+/* File Input */
+input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Button */
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Result Container */
+.result-container {
+    margin-top: 20px;
+    padding: 20px;
+    background: #e3fcef;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Image Preview */
+.preview-img {
+    margin-top: 15px;
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
